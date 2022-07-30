@@ -42,7 +42,7 @@ box.addEventListener('click', function(e) {
 
     
     setTimeout(function() {
-        michi.style.transform = "translateY(-160px)" 
+        michi.style.transform = "translateY(-170px)" 
         michi.style.transition = "2s"
     }, 7000)
 });

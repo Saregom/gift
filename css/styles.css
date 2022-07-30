@@ -86,15 +86,34 @@ body, html{
     position: absolute;
 }
 
+@media screen and (max-width: 600px){
+    .title{
+        width: 350px;
+    }
+}
+
+.container2{
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    transform: translateY(60px);
+}
+
 .michi{
     position: absolute;
-    width: 300px;
-    top: 350px;
+    width: 350px;
+    display: none;
+}
+
+.loffy-gif{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    position: relative;
     display: none;
 }
 
 .p-carcel{
-    position: absolute;
     font-size: 25px;
     display: none;
     bottom: 220px;
@@ -102,16 +121,3 @@ body, html{
     text-align: center;
 }
 
-.loffy-gif{
-    width: 100%;
-    max-width: 500px;
-    padding: 10px;
-    position: absolute;
-    display: none;
-}
-
-@media screen and (max-width: 600px){
-    .title{
-        width: 350px;
-    }
-}
