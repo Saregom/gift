@@ -1,30 +1,24 @@
 *{
     box-sizing: border-box;
 }
-body{
+body, html{
+    display: flex;
+    justify-content: center;
     overflow: hidden;
     margin: 0;
     padding: 0;
     background-color: rgb(245, 94, 94);
 }
-.star-div{
+.container{
     padding: 10px;
-    /* margin: 0; */
     width: 100%;
     height: 100vh;
-   /*  background-color: aqua; */
-   /*  text-align: center; */
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
 }
 .star{
-   /*  margin: auto; */
-   /*  object-fit: cover; */
-    /* width: 100%; */
     height: 100%;
-    /* background-color: black; */
     animation: spin infinite linear 10s;
 }
 @keyframes spin{
@@ -36,32 +30,21 @@ body{
     }
 }
 
-.gift-div{
-    position: absolute;
-    /* top: 0; */
-   /*  width: 100%;
-    height: 100vh; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    cursor: pointer;
-}
 .gift-tap{
     position: absolute;
-    top: -10px;
+    top: -30px;
     left: -10px;
-    width: 220px;
-    height: 25px;
+    width: 170px;
+    height: 30px;
     background-color: rgb(87, 115, 181);
     box-shadow: 0 13px 8px -10px rgb(41, 41, 87);
 }
 .gift-box{
+    cursor: pointer;
+    position: absolute;
     animation: shake 1s infinite;
-    /* top:0; */
-    /* position:absolute; */
-    width: 200px;
-    height: 100px;
+    width: 150px;
+    height: 120px;
     background-color: rgb(94, 139, 245);
 }
 .cinta{
@@ -73,7 +56,6 @@ body{
 }
 .cinta-box{
     width: 20px;
-    /* top: -25px; */
 }
 
 @keyframes shake{
@@ -88,5 +70,48 @@ body{
     }
     30%{
         transform: translate(0px, 0px);
+    }
+}
+
+.loffy-heart{
+    width: 68px;
+    position: absolute;
+}
+
+.title{
+    width: 300px;
+    z-index: 1;
+    top: -70px;
+    display: none;
+    position: absolute;
+}
+
+.michi{
+    position: absolute;
+    width: 300px;
+    top: 350px;
+    display: none;
+}
+
+.p-carcel{
+    position: absolute;
+    font-size: 25px;
+    display: none;
+    bottom: 220px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.loffy-gif{
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
+    position: absolute;
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .title{
+        width: 350px;
     }
 }
