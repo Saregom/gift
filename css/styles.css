@@ -81,7 +81,7 @@ body, html{
 .title{
     max-width: 300px;
     z-index: 1;
-    top: -30px;
+    top: -50px;
     display: none;
     position: absolute;
 }
@@ -96,12 +96,12 @@ body, html{
     position: absolute;
     width: 100%;
     display: inline-block;
-    transform: translateY(110px);
+    transform: translateY(90px);
 }
 
 .michi{
     position: absolute;
-    max-width: 300px;
+    max-width: 330px;
     display: none;
 }
 
