@@ -81,7 +81,7 @@ body, html{
 .title{
     max-width: 300px;
     z-index: 1;
-    top: -60px;
+    top: -30px;
     display: none;
     position: absolute;
 }
